@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surfers</title>
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Playfair+Display:400,400i|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <header id="header">
+    <nav>
+      <div class="menu">
+        <div class="container menu_wrp">
+          <div class="menu_logo menu_item">
+             <span><a href="/">Surfers Co.</a></span>
+          </div>
+          
+          <div class="menu_list menu_item">
+             <ul>
+              <li class="menu_list-item"><a href="/">Boards</a></li>
+              <li class="menu_list-item"><a href="/">Accessories</a></li>
+              <li class="menu_list-item"><a href="/">Blog</a></li>
+              <li class="menu_list-item"><a href="/">Technology</a></li>
+              <li class="menu_list-item"><a href="#about-us">Team</a></li>
+              <li class="menu_list-item"><a href="/">Dealers</a></li>
+            </ul>
+          </div>
+          
+          <div class="menu_toggle">
+            <a><i class="fa fa-bars" aria-hidden="true"></i></a>
+          </div>
+          <div class="menu_social menu_item">
+            <ul>
+              <li class="menu_social-item"><a href="" title=""><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="menu_social-item"><a href="" title=""><i class="fa fa-camera" aria-hidden="true"></i></a></li>
+              <li class="menu_social-item"><a href="" title=""><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="introduce">
+
+    </div>
+  </header><!-- /header -->
+  
+  <div class="content">
+    
+  </div>
+
+  <footer id="footer">
+    
+  </footer>   
+  <!-- script -->
+  <script src="js/tabs.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="js/tabs-images.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="js/video.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script src="js/slide.js" type="text/javascript" charset="utf-8" async defer></script>
+  <script>
+    var active = false;
+
+    $('.menu_toggle').click(function(){
+       // active = true;
+       
+        active = !active;
+        console.log(active);
+        if(active) {
+          $('.menu_list').hide();
+        } else {
+          $('.menu_list').show();
+        }
+    });
+  </script>
+</body>
+</html>
